@@ -3,17 +3,78 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://wisocn.github.io/posts/my-first-post/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wisocn.github.io/categories/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wisocn.github.io/</loc>
+    <loc>https://wisocn.github.io/posts/another-post/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wisocn.github.io/posts/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wisocn.github.io/tags/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wisocn.github.io/categories/configuration/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wisocn.github.io/categories/example/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wisocn.github.io/tags/example/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wisocn.github.io/tags/hugo/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wisocn.github.io/tags/kotlin/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wisocn.github.io/categories/languages/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wisocn.github.io/tags/toml/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wisocn.github.io/</loc>
+    <lastmod>2014-09-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
