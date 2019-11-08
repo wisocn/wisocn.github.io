@@ -20,15 +20,14 @@
 show_excerpts: true
 
 plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
+  name: Vid Visočnik
+  tagline: Backend, Sports, Music
   date_format: "%b %-d, %Y"
 
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman # format: locale/username
-
+    twitter: wisocn
+    github:  wisocn
+  
 # Build settings
 theme: plainwhite
 remote_theme: thelehhman/plainwhite-jekyll
