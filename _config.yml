@@ -21,7 +21,7 @@ show_excerpts: true
 
 plainwhite:
   name: Vid Visočnik
-  tagline: Backend, Sports, Music
+  tagline: Bits, Bytes, Music. 
   date_format: "%b %-d, %Y"
   sitemap: true
   disqus_shortname: games
