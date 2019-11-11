@@ -2,9 +2,26 @@
 layout: post
 title:  "TCPdump it!"
 date:   2019-11-08 14:52:11 +0100
-categories: cli devops
+categories: cli tcpdump linux
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Have you ever imported some fancy new library/module/subproject and then tried to log the output of whats get sent over the wire? Sometimes you just want to see the payload sent in order to debug effectivley. 
+Of course you should first try to increase the log level and output. 
+
+But! 
+
+Sometimes logging is not possible either because author didn't include any logging statements or logging didn't even make sense.     
+
+In my case it was the influx registry metrics push library.
+
+I could see that metrics are in fact being sent but some influx tags were not included. At least this was my assumption.
+If i've increased the log level the influx-push library would just log the "x numbers of Metrics sucessfully sent". 
+
+So I digged into code.
+
+I've found out that this is the only log statement in the whole class and this is the one i'm seeing currently. 
+
+Allright time to check the internet traffic! 
+   
 
 Jekyll requires blog post files to be named according to the following format:
 
