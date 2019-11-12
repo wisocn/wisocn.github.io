@@ -4,24 +4,40 @@ title:  "TCPdump it!"
 date:   2019-11-08 14:52:11 +0100
 categories: cli tcpdump linux
 ---
-Have you ever imported some fancy new library/module/subproject and then tried to log the output of whats get sent over the wire? Sometimes you just want to see the payload sent in order to debug effectivley. 
-Of course you should first try to increase the log level and output. 
+Here's common scenario i came accross lately.
+
+You import some fancy new library/module and stuff works, life is good. 
+Now, you add some custom features, tricks and code around it but library doesn't behave as you expected. 
+
+Naturally, to fully understand what is going on, the next step is to rise up the logging level and get more verbose output in logs. 
 
 But! 
 
-Sometimes logging is not possible either because author didn't include any logging statements or logging didn't even make sense.     
+Sometimes logging is not possible either because author of the library didn't include any logging statements or logging didn't even make sense.    
 
-In my case it was the influx registry metrics push library.
+In my case it was the influx registry library that enabled pushing of metrics to influx-db.
+It was working allright and the metrics did indeed get pushed over the wire. But some tags for metrics were not included!
 
-I could see that metrics are in fact being sent but some influx tags were not included. At least this was my assumption.
-If i've increased the log level the influx-push library would just log the "x numbers of Metrics sucessfully sent". 
+WTF?
 
-So I digged into code.
+So, i dug into code of library (it's open sourced) and noticed that the only logging statement in the library was
 
-I've found out that this is the only log statement in the whole class and this is the one i'm seeing currently. 
+"x numbers of Metrics sucessfully sent". 
 
-Allright time to check the internet traffic! 
-   
+No payload was ever logged because probably there was never a use case for that. 
+
+So i turned to a quite useful tool in linux called TCPDUMP. 
+
+What is tcpdump? 
+
+For me, most important excerpt from man page:
+
+{% highlight ruby %}
+tcpdump  prints  out  a  description  of the contents of packets on a network interface that match the boolean expression; 
+It can also be run with the -w flag, which causes it to save the packet data to a file for later analysis,
+It can also be run with the -V flag, which causes it to read a list of saved packet files.
+{% endhighlight %}
+
 
 Jekyll requires blog post files to be named according to the following format:
 
