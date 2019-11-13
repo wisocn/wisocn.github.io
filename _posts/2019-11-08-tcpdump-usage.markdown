@@ -33,10 +33,15 @@ What is tcpdump?
 For me, most important excerpt from man page:
 
 {% highlight ruby %}
-tcpdump  prints  out  a  description  of the contents of packets on a network interface that match the boolean expression; 
-It can also be run with the -w flag, which causes it to save the packet data to a file for later analysis,
-It can also be run with the -V flag, which causes it to read a list of saved packet files.
+1.) tcpdump  prints  out  a  description  of the contents of packets on a network interface that match the boolean expression; 
+2.) It can also be run with the -w flag, which causes it to save the packet data to a file for later analysis,
+3.) It can also be run with the -V flag, which causes it to read a list of saved packet files.
 {% endhighlight %}
+
+In short: 
+tcpdump prints out the contents of packets flowing from a certian local network interface (eth0, wlp0, tun0) 
+You can write all of the intercepted packets to a file for later analysis (think wireshark)
+Filter out a saved packet files that are stored on the disk.
 
 
 Jekyll requires blog post files to be named according to the following format:
