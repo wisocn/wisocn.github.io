@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "A little tale of Encyption context and Dynamo DB"
-subtitle: "Encyption, context and table name bound together?"
-date:   2019-12-08 14:52:11 +0100
-categories: dynamodb aws
+title:  "Encryption context in DynamoDB"
+subtitle: "A shot tale about table name beign bound to encryption context!"
+date:   2019-01-01 14:52:11 +0100
+categories: aws dynamodb
 ---
 Here's common scenario i came accross lately.
 
